@@ -1,0 +1,44 @@
+/* Main Styles */
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1em 0;
+
+  h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+
+.main {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.results {
+  margin-top: 1rem;
+  padding: 0 .5rem;
+  width: 90%;
+  max-width: 800px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  background-color: #333;
+
+  p {
+    margin: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  span {
+    color: yellow;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Sentiment Analysis Project</h1>
+    </header>
+    <main class="main">
+      <section>
+        <form onsubmit="return Client.handleSubmit(event)">
+          <input type="text" id="input" placeholder="Enter some text to analyze..." required>
+          <input type="submit" value="Analyze">
+        </form>
+      </section>
+      <section>
+        <div class="results">
+          <p>Text: <span id="text"></span></p>
+          <p>Agreement: <span id="agreement"></span></p>
+          <p>Subjectivity: <span id="subjectivity"></span></p>
+          <p>Irony: <span id="irony"></span></p>
+          <p>Confidence: <span id="confidence"></span></p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Created by Ryan Moody</p>
+    </footer>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () =>
+          navigator.serviceWorker.register("/service-worker.js")
+        );
+      }
+    </script>
+  </body>
+</html>
