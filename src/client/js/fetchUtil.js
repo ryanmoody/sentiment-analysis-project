@@ -1,5 +1,5 @@
 export const fetchSentimentAnalysis = async (input) => {
-  const response = await fetch("/api", {
+  const response = await fetch("http://localhost:8081/api", {
     method: "POST",
     mode: "cors",
     cache: "no-cache",
